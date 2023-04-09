@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4fc7921bf9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+
+        <nav class = "navbar">
+            <div class = "navbar-left">
+                <a href="#" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/9599/9599267.png" ></i></a>
+    
+    
+    
+                <div class="search-box">
+                    <img src="images_hack/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class = "navbar-center">
+                <ul>
+                    <li><a href="#" class="active-link"><img src="images_hack/home.png"><span>Home</span></a></li>
+                    <li><a href="#"><img src="images_hack/network.png"><span>My Network</span></a></li>
+                    <li><a href="job/643200c92dad828b7d0327f0"><img src="images_hack/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="#"><img src="images_hack/message.png"><span>Messaging</span></a></li>
+                    <li><a href="#"><img src="images_hack/notification.png"><span>Notification</span></a></li>
+                    
+                </ul>
+    
+            </div>
+            <div class = "navbar-right">
+                <div class = "online">
+                <img src="images_hack/user-1.png" class="nav-profile-img" onclick = "toggleMenu()">
+            </div>
+        </div>
+    
+        <!-- profile menu drop down -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images_hack/user-1.png">
+                    <div>
+                        <h3>Rayan Walton</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images_hack/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images_hack/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images_hack/help.png">
+                    <p>Help & Suppoort</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images_hack/display.png">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images_hack/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+        </nav>
+        <!-- -----------navbar closed--------- -->
+        <div class = "container">
+             <!-- left-sidebar -->
+            <div class="left-sidebar">
+                <div class="sidebar-profile-box">
+                    <img src="images_hack/cover-pic.png" width="100%">
+                    <div class="sidebar-profile-info">
+                        <img src="images_hack/user-1.png">
+                        <h1><%= variableName %></h1>
+                        <h3><%= variableName %></h3>
+                        <ul>
+                            <li>Your Profile Views<span>52</span></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-profile-link">
+                        <a href="#"><img src="images_hack/items.png">My items</a>
+                        <a href="#"><img src="images_hack/premium.png">Try Premium</a>
+                    </div>
+                </div>
+                <div class="sidebar-activity"> 
+                    <h3>RECENT</h3>
+                    <a href="#"><img src="images_hack/recent.png" alt="">Web Devlopment</a>
+                    <a href="#"><img src="images_hack/recent.png" alt="">User Interface</a>
+                    <a href="#"><img src="images_hack/recent.png" alt="">Online Learning</a>
+                    <a href="#"><img src="images_hack/recent.png" alt="">Code Better</a>
+                    <a href="#"><img src="images_hack/recent.png" alt="">Group Learning</a>
+                    <h3>GROUPS</h3>
+                    <a href="#"><img src="images_hack/group.png" alt="">Web Design Group</a>
+                    <a href="#"><img src="images_hack/group.png" alt="">Html & css Learners</a>
+                    <a href="#"><img src="images_hack/group.png" alt="">Python and Javascript </a>
+                    <a href="#"><img src="images_hack/group.png" alt="">Learn Coding Online</a>
+                    <h3>HASHTAG</h3>
+                    <a href="#"><img src="images_hack/hashtag.png" alt="">Webdevlopment</a>
+                    <a href="#"><img src="images_hack/hashtag.png" alt="">Ui</a>
+                    <a href="#"><img src="images_hack/hashtag.png" alt="">Online Learning</a>
+                    <div class="discover-more-link">
+                        <a href="#">Dicover More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-content">
+                <div class="create-post">
+                    <div class="create-post-input">
+                        <img src="images_hack/user-1.png">
+                        <textarea rows="3" placeholder="Write a post"></textarea>
+                    </div>
+                    <div class="create-post-links">
+                        <li><img src="images_hack/photo.png">Photo</li>
+                        <li><img src="images_hack/photo.png">Video</li>
+                        <li><img src="images_hack/photo.png">EVey</li>
+                        <li><img src="images_hack/photo.png">Photo</li>
+                        <li>Post</li>
+                    </div>
+                </div>
+                <div class="sort-by">
+                    <hr>
+                    <p>Sort by: <span>top <img src="images_hack/down-arrow.png" alt=""></span></p>
+                </div>
+    
+        <h1>Job Details</h1>
+        <ul>
+            <% jobs.forEach(function(job) { %>
+                <li>
+    
+                    <div class="post">
+                        <div class="post-author">
+                            <img src="images_hack/user-3.png">
+                            <div>
+                                <h1>Benjamin Leo</h1>
+                                <small>SDE 3 @ WaterCNC</small>
+                                <small>2 hours ago</small>
+                            </div>
+                        </div>
+                        <p><strong>Content:</strong> <%= job.jobContent %></p>
+                        <img src="images_hack/post-image-1.png" width="100%">
+                        <div class="post-stats">
+                            <div>
+                                <img src="images_hack/thumbsup.png">
+                                <img src="images_hack/love.png">
+                                <img src="images_hack/clap.png">
+                                <span class="liked-users">Abhinav mishra and 75 others</span>
+                            </div>
+                            <div>
+                                <span>22 comments &middot; 40 shares</span>
+                            </div>
+                        </div>
+                        <div class="post-actiivity">
+                            <div>
+                                <img src="images_hack/user-1.png" class="post-activity-user-icon">
+                                <img src="images_hack/down-arrow.png" class="post-activity-arrow-icon">
+                            </div>
+                            <div class="post-actiivity-link">
+                                <button class="btn btn-primary">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <strong>Job Name:</strong> <%= job.jobName %><br>
+                    
+                    <!-- Display other job details as needed -->
+                </li>
+            <% }); %>
+        </ul>
+    </body>
+</body>
+</html>
